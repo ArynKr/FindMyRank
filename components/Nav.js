@@ -27,9 +27,9 @@ function Nav() {
     >
       {/* Logo */}
       <div className="pt-2">
-        <a href="/" className="p-0 m-0">
+        <Link href="/" className="p-0 m-0">
           <Image src={logo} width={150} />
-        </a>
+        </Link>
       </div>
 
       {/* Burger Icon */}
@@ -59,29 +59,32 @@ function Nav() {
               md:space-y-0"
         >
           <li>
-            <a className="py-2 block hover:text-[#363876]" href="/features">
+            <Link className="py-2 block hover:text-[#363876]" href="/features">
               Features
-            </a>
+            </Link>
           </li>
           <li>
-            <a className=" py-2 block hover:text-[#363876]" href="/pricing">
+            <Link className=" py-2 block hover:text-[#363876]" href="/pricing">
               Pricing
-            </a>
+            </Link>
           </li>
           <li>
-            <a className=" py-2 block hover:text-[#363876]" href="/customers">
+            <Link
+              className=" py-2 block hover:text-[#363876]"
+              href="/customers"
+            >
               Customers
-            </a>
+            </Link>
           </li>
           <li>
-            <a className=" py-2 block hover:text-[#363876]" href="/blog">
+            <Link className=" py-2 block hover:text-[#363876]" href="/blog">
               Blog
-            </a>
+            </Link>
           </li>
           <li>
-            <a className=" py-2 block hover:text-[#363876]" href="/sign-up">
+            <Link className=" py-2 block hover:text-[#363876]" href="/sign-up">
               Sign Up
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
