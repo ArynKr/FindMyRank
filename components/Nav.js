@@ -15,20 +15,21 @@ function Nav() {
           justify-between
           w-full
           py-4
-          md:py-2
+          md:py-4
+          xl:py-8
           px-4
-          md:px-8
-          text-lg text-gray-700
+          lg:px-12
+          xl:px-24
+          text-[1rem] 
+        text-gray-700
           bg-white
         "
     >
       {/* Logo */}
-      <div>
-        <Link href="/">
-          <a className="p-0 m-0">
-            <Image src={logo} width={150} />
-          </a>
-        </Link>
+      <div className="pt-2">
+        <a href="/" className="p-0 m-0">
+          <Image src={logo} width={150} />
+        </a>
       </div>
 
       {/* Burger Icon */}
@@ -44,8 +45,13 @@ function Nav() {
       >
         <ul
           className="
+              md:w-[50vw]
+              max-w-[30rem]
               pt-4
-              text-base text-gray-700
+              px-2
+              md:px-0
+              xl:text-[1.125rem]
+            text-gray-700
               md:flex
               md:justify-between 
               md:pt-0
@@ -53,27 +59,27 @@ function Nav() {
               md:space-y-0"
         >
           <li>
-            <a className="md:p-4 py-2 block hover:text-[#363876]" href="#">
+            <a className="py-2 block hover:text-[#363876]" href="/features">
               Features
             </a>
           </li>
           <li>
-            <a className="md:p-4 py-2 block hover:text-[#363876]" href="#">
+            <a className=" py-2 block hover:text-[#363876]" href="/pricing">
               Pricing
             </a>
           </li>
           <li>
-            <a className="md:p-4 py-2 block hover:text-[#363876]" href="#">
+            <a className=" py-2 block hover:text-[#363876]" href="/customers">
               Customers
             </a>
           </li>
           <li>
-            <a className="md:p-4 py-2 block hover:text-[#363876]" href="#">
+            <a className=" py-2 block hover:text-[#363876]" href="/blog">
               Blog
             </a>
           </li>
           <li>
-            <a className="md:p-4 py-2 block hover:text-[#363876]" href="#">
+            <a className=" py-2 block hover:text-[#363876]" href="/sign-up">
               Sign Up
             </a>
           </li>

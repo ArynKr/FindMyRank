@@ -7,7 +7,7 @@ function Button({ text, bg, fw }) {
           ? 'bg-[#ffffff] text-[#363876]'
           : 'bg-[#363876] text-white'
       } font-${fw}
-      w-full rounded-md`}
+      w-full border-2 border-[#363876] rounded-md`}
     >
       {text}
     </button>

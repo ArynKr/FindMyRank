@@ -10,25 +10,19 @@ import Predict from '../components/Predict';
 
 export default function Home() {
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 max-w-[1920px] mx-auto">
       {/* Navbar */}
       <Nav />
-
       {/* Header */}
       <Header />
-
       {/* Form */}
       <Form />
-
       {/* Predict */}
       <Predict />
-
       {/* Numbers */}
       <Numbers />
-
       {/* FAQs */}
       <Faqs />
-
       {/* Footer */}
       <Footer />
     </div>
